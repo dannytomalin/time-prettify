@@ -83,6 +83,7 @@ namespace src
                             ConvertedMinutes = item.Value;
                         }
                     }
+
                     foreach (var item in TimeDictionary.HoursDictionary)
                     {
                         if (hours == item.Key)
@@ -90,9 +91,9 @@ namespace src
                             ConvertedHours = hours.ToString();
                             ConvertedHours = item.Value;
                         }
-                    };
+                    }
 
-                    if(minutes == 45)
+                    if(minutes == 15)
                     {
                         PrettfiedTime = $"{ConvertedMinutes} to {ConvertedHours}";
                     }
